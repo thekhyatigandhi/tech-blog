@@ -29,3 +29,6 @@ const sess = {
     db: sequelize,
   }),
 };
+
+// add express-session (express middleware)
+app.use(session(sess));

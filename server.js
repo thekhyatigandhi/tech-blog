@@ -6,8 +6,8 @@ const exphbs = require("express-handlebars");
 const session = require("express-session");
 const helpers = require("./utils/helpers");
 
-// import db connection
-const sequelize = require("./config/connection");
+// create new store
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 // create express server, set port
 const app = express();

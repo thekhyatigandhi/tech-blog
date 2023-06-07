@@ -8,3 +8,8 @@ const helpers = require("./utils/helpers");
 
 // import db connection
 const sequelize = require("./config/connection");
+
+// create express server, set port
+const app = express();
+const PORT = process.env.PORT || 3001;
+app.use();

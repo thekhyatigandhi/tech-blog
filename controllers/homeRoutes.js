@@ -35,8 +35,19 @@ router.get("/", async (req, res) => {
 
 // render dash (unique to user, shows only user's posts, only accessed when logged in)
 
-router.get("/", async (req, res) => {
+router.get("/dash", async (req, res) => {
   try {
+    if (req.session.logged_in){
+      const postData = await Post.findAll({
+        where:{
+          user_id:req.session.user_id,
+        },
+        include[{
+          model: User
+        }]
+      })
+      }
+    }
   } catch (err) {
     console.log(err);
   }

@@ -37,6 +37,23 @@ router.delete("/:id", async (req, res) => {
 });
 
 // update comment
-router.put("/:id", async (req, res) => {});
+router.put("/:id", async (req, res) => {
+  try {
+    const updateComment = await Comment.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!updateComment[0]) {
+      res.status(400).json({
+        message: "No Comment Found With That ID.",
+      });
+    }
+    res.status(200).json(updateComment);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

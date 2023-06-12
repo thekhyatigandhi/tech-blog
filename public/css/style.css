@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* color palette */
+  --judgement-gray: rgba(35, 35, 35, 0.9);
+  --no-feet: rgba(131, 129, 129, 0.5);
+  --slim-shady: rgba(0, 0, 0, 0.5);
+  --live-laugh-beige: rgb(252, 245, 237);
+  --blue-it: rgb(95, 189, 191);
+  --really-blue-it: rgb(84, 150, 150);
+  --red-zeppelin: #b83619;
+  --ron-burgundy: #6a1e0e;
+  --daily-rind: rgb(255, 155, 48);
+  --cheese: rgb(255, 221, 129);
+  /* base styles */
+  color: var(--live-laugh-beige);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+html {
+  background: url(/public/images/background-img.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: black;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--blue-it);
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.logo-img {
+  margin-top: 10px;
+  height: 50px;
+  width: auto;
+}

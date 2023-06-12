@@ -1,0 +1,10 @@
+<div class="comments">    
+    <p><span class="quotes-left">"</span><span id="comment-text">{{this.comment_text}}</span><span class="quotes">"</span></p>
+    <p class="post-info">—<span class="username">{{this.user.username}}</span>, <strong>{{format_date this.createdAt}}</strong></p>
+    {{#if myComment}}
+    <div class="btn-container">
+                <button type="submit" class="submit-btn" id="comment-update-btn" data-id={{this.id}}>UPDATE</button>
+                <button type="submit" class="submit-btn" id="comment-delete-btn" data-id={{this.id}}>DELETE</button>
+    </div>
+    {{/if}}
+</div>

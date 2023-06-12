@@ -35,3 +35,28 @@ router.put("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// delete post
+router.delete("/:id", async (req, res) => {
+  try {
+    const postData = await Post.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+    if (!postData) {
+      res.status(404).json({ message: "No post with that id!" });
+      return;
+    }
+    res.status(200).json(postData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// get single post by ID
+
+// verify if POST belongs to user
+
+// verify if the COMMENT belongs to the user

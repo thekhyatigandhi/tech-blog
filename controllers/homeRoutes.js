@@ -97,5 +97,20 @@ router.get("/login", async (req, res) => {
 });
 
 // render new post page (only if logged in)
-
+router.get("/new", async (req, res) => {
+  try {
+    if (req.session.logged_in) {
+      res.render("new", {
+        loggedIn: req.session.logged_in,
+        userId: req.session.user_id,
+      });
+      return;
+    } else {
+      res.redirect("/login");
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 module.exports = router;

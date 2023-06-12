@@ -6,13 +6,21 @@ async function newPost(event) {
 
   if (title && post_body) {
     const response = await fetch(`/api/post`, {
-        method: 'POST',
-        body: JSON.stringify({
-            title,
-            post_body,
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        },
+      method: "POST",
+      body: JSON.stringify({
+        title,
+        post_body,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
+    if (response.ok) {
+      document.location.replace("/dash");
+    } else {
+      alert(response.statusText);
+    }
+  }
 }
+
+document.querySelector("#new-post-form").addEventListener("submit", newPost);

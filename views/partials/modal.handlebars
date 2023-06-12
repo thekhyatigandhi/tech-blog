@@ -1,0 +1,23 @@
+<dialog id="login-alert-modal">
+    <div id="modal-container">
+        <div id="modal-card">
+            <div id="gif-container">
+                <img src="/images/let-me-in.gif" alt="GIF" id="modal-gif">
+            </div>
+            <p id="modal-text"><span id="sorry">SORRY!</span><br>Please check your username and password and try again.</p>
+        </div>
+    </div>
+    
+</dialog>
+
+<script>
+    function openAlertModal() {
+        var LoginAlertModal = document.getElementById("login-alert-modal");
+        LoginAlertModal.showModal();
+        
+        var modalContainer = document.getElementById("modal-container");
+        modalContainer.addEventListener("click", function() {
+            LoginAlertModal.close();
+        });
+    };
+</script>

@@ -5,6 +5,7 @@ const routes = require("./controllers");
 const exphbs = require("express-handlebars");
 const session = require("express-session");
 const helpers = require("./utils/helpers");
+const { clog } = require("./utils/clog");
 
 // create new store
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -12,7 +13,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // create express server, set port
 const app = express();
 const PORT = process.env.PORT || 3001;
-app.use();
+app.use(clog);
 
 // configure session object with store
 const sess = {

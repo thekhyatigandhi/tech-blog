@@ -16,3 +16,22 @@ router.post("/", async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+// update post
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedPost = await Post.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!updatedPost[0]) {
+      res.status(400).json({ message: "No post found with that id!" });
+      return;
+    }
+    res.status(200).json(updatedPost);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
+});

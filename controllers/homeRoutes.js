@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { User, Post, Comment } = require("../models");
 
 // ROUTES http://localhost:3001/
 

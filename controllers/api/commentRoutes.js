@@ -27,7 +27,7 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!comment) {
-      res.status(404).json({ message: "No comment found with that id!" });
+      res.status(404).json({ message: "No comment found with that ID!" });
       return;
     }
     res.status(200).json(comment);

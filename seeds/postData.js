@@ -2,33 +2,33 @@ const { Post } = require("../models");
 
 const postData = [
   {
-    title: "Lorem Ipsum",
+    title: "Hidden Gems: Unveiling the Latest iOS Update Features",
     post_body:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Discover the hidden treasures within the latest iOS update! From enhanced privacy settings to productivity-boosting shortcuts, this article unveils the exciting new features that will revolutionize your iPhone experience. Get ready to unlock a whole new level of functionality!",
     user_id: 1,
   },
   {
-    title: "Dolor Sit Amet",
+    title: "The Promising Future of Emerging Technologies",
     post_body:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "The future is here, and it's powered by groundbreaking technologies. From artificial intelligence to blockchain and beyond, these innovations are reshaping industries and creating new possibilities. Join us as we explore the potential and impact of these game-changing technologies.",
     user_id: 2,
   },
   {
-    title: "Consectetur Adipiscing",
+    title: "Mastering Coding Challenges: A Step-by-Step Guide",
     post_body:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Struggling with coding challenges? Fear not! In this comprehensive guide, we break down the art of solving coding problems. Learn proven strategies, common pitfalls, and essential techniques that will sharpen your problem-solving skills and help you tackle coding challenges like a pro.",
     user_id: 3,
   },
   {
-    title: "Sed Do Eiusmod",
+    title: "Prioritizing Cybersecurity: Safeguarding Your Digital World",
     post_body:
-      "Fringilla est ullamcorper eget nulla facilisi etiam. Dignissim sodales ut eu sem. Scelerisque varius morbi enim nunc faucibus a. Et sollicitudin ac orci phasellus egestas tellus.",
+      "In the era of increasing digital threats, cybersecurity is paramount. This post sheds light on the importance of adopting robust security measures to protect your sensitive data. Explore best practices, practical tips, and the latest trends in cybersecurity to stay one step ahead of cybercriminals",
     user_id: 4,
   },
   {
-    title: "Tempor Incididunt",
+    title: "Demystifying Complex Concepts: Tech Simplified",
     post_body:
-      "Morbi tristique senectus et netus et malesuada. Amet consectetur adipiscing elit duis tristique. Id interdum velit laoreet id donec ultrices tincidunt. ",
+      "Understanding complex tech concepts shouldn't be a daunting task. In this series, we break down intricate topics into digestible bites. Dive into the world of machine learning, cloud computing, or quantum computing, and embark on a journey where complexity meets simplicity. ",
     user_id: 5,
   },
 ];

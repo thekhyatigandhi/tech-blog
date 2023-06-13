@@ -12,7 +12,7 @@
   --blue: rgb(95, 189, 191);
   --reallyblue: rgb(84, 150, 150);
   --red: #fb3002;
-  --burgundy: white;
+  --burgundy: #ffde5a;
   --orange: rgb(255, 155, 48);
   --cheesyyellow: rgb(255, 221, 129);
   /* base styles */
@@ -43,8 +43,8 @@ html {
 
 .logo-img {
   margin-top: 10px;
-  height: 60px;
-  width: auto;
+  height: 80px;
+  width: 600px;
 }
 
 .nav-list {

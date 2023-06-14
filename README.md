@@ -21,15 +21,16 @@ Tech Connect is a blog site designed following the Model-View-Controller (MVC) p
 
 ## Application
 
-The following [video](https://youtu.be/Yw5SnOgDlVI) shows the application's set-up in VScode and demonstarted all API routes using Insomnia.
-
-https://github.com/thekhyatigandhi/E-Commerce-Back-End/assets/125392517/e6371e19-5e57-422e-85e2-81474ad1d8c4
+The following photos shows how the application looks:
+![Alt text](./public/images/1.png)
+![Alt text](./public/images/2.png)
 
 ## Technologies Used
 
 MySQL </br>
 NODE JS </br>
-Insomnia
+Insomnia </br>
+Heroku
 
 ## Installation
 
@@ -67,7 +68,7 @@ DB_PW='YOUR PASSWORD'
 
 ## Usage
 
-Access the [deployed Heroku link](link) using your preferred browser.
+Access the [deployed Heroku link](https://pacific-dawn-36279.herokuapp.com/) using your preferred browser.
 
 - Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) After confirming your password and clicking `submit`, you will be logged in automatically after account creation. Remember your log in credentials for future visits!
 - Create a new post from _anywhere_ on the site by clicking `NEW` in the nav bar. Enter a title and post body and click `POST`. The new post is now viewable on the 'main feed' and 'dash' view.
